@@ -3,7 +3,7 @@ def busca_binaria(lista, elemento):
     fim = len(lista) - 1
     
     while inicio <= fim:
-        meio = (incio + fim )//2
+        meio = (inicio + fim )//2
         if lista[meio] == elemento:
             return meio
         elif lista[meio] < elemento:
@@ -27,10 +27,9 @@ nomes = ["Alice", "Amanda", "André", "Antonio", "Beatriz", "Bruno", "Camila", "
          "Iara", "Igor", "Irene", "Isaque", "Ivan", "Janaina", "Jéssica", "Jonas", "Jorge", "José", "Juliana"]
 
 
-       elemento = "Rafael"
-       resutado = busca_binaria_resutado(nomes,elemento)
+elemento = "Rafael"
+resutado = busca_binaria(nomes,elemento)
 
-       if resutado != -1:
+if resutado != -1:
             print(f"O elemento {elemento} está na posição {resutado} na lista.")
-    else:
-             print(f"O elemento {elemento} não foi encontrado na lista.")git
+else: print(f"O elemento {elemento} não foi encontrado na lista.")
